@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    tools:context=".MainActivity2"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/haahah"
+        android:layout_marginBottom="50dp"
+        android:text="Uçuyoruz"
+        android:textColor="#F8BBD0"
+        android:textSize="48sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OYNA"
+        android:textSize="64sp"
+        android:fontFamily="@font/haahah"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:id="@+id/play"
+        />
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_volume_up_24"
+        android:id="@+id/volumectrl"/>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:foreground="@drawable/ic_baseline_menu_24"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:id="@+id/aboutus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:foreground="@drawable/ic_info"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/aboutus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:foreground="@drawable/ic_exit"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnexit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:foreground="@drawable/ic_baseline_person_add_disabled_24"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button"
+        android:foregroundGravity="center"
+        android:foregroundTint="@color/black"
+        android:onClick="onClick"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+
+</RelativeLayout>
